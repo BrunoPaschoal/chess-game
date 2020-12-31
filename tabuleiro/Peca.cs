@@ -9,8 +9,8 @@ namespace tabuleiro {
         public Tabuleiro Tab { get; protected set; }
 
         //CONSTRUTORES
-        public Peca(Posicao posicao, Tabuleiro tab, Cor cor) {
-            Posicao = posicao;
+        public Peca(Tabuleiro tab, Cor cor) {
+            Posicao = null;
             Cor = cor;
             Tab = tab;
             //Quantidade de movimento, no início do jogo, será iniciado com zero

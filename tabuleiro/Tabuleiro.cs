@@ -22,5 +22,12 @@ namespace tabuleiro {
         public Peca peca(int linha, int coluna) { //Método retorna uma peça
             return pecas[linha, coluna];
         }
+
+        //MÉTODOS
+        //Método que coloca peça no cabuleiro
+        public void colocarPeca(Peca p, Posicao pos) {
+            pecas[pos.Linha, pos.Coluna] = p;
+            p.Posicao = pos;
+        }
     }
 }
