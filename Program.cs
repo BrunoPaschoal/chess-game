@@ -5,12 +5,10 @@ namespace xadrez_console {
     class Program {
         static void Main(string[] args) {
 
-            Tabuleiro tab = new Tabuleiro(10, 10);
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
-
-
-
-
+            //Chamando método para imprimir o tabuleiro
+            Tela.imprimirTabuleiro(tab);
 
         }
     }

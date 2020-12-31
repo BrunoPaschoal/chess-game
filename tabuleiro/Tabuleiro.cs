@@ -17,6 +17,10 @@ namespace tabuleiro {
             //As peças receberão uma nova matriz de peças, com número de linhas e colunas
             pecas = new Peca[linhas, colunas];
         }
-        
+
+        //Criando método que dá acesso a uma peça do tabuleiro que é privado para outra classe
+        public Peca peca(int linha, int coluna) { //Método retorna uma peça
+            return pecas[linha, coluna];
+        }
     }
 }
