@@ -45,6 +45,17 @@ namespace tabuleiro {
             p.Posicao = pos;
         }
 
+        //Método que tira Peça do tabuleiro
+        public Peca retirarPeca(Posicao pos) {
+            if(peca(pos) == null) {
+                return null;                
+            }
+            Peca aux = peca(pos);
+            aux.Posicao = null;
+            pecas[pos.Linha, pos.Coluna] = null;
+            return aux;
+        }
+
         //Criando um método pra testar se uma posição é válida
         public bool posicaoValida(Posicao pos) {
             if(pos.Linha < 0 || pos.Linha >= Linhas || pos.Coluna < 0 || pos.Coluna >= Colunas) {

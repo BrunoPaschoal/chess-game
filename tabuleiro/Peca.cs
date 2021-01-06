@@ -16,5 +16,10 @@ namespace tabuleiro {
             //Quantidade de movimento, no início do jogo, será iniciado com zero
             QtdMovimentos = 0;
         }
+
+        //Incrementa a qualidade de movimentos
+        public void incrementarQtdMovimentos() {
+            QtdMovimentos++;
+        }
     }
 }
